@@ -30,4 +30,5 @@ std::vector<float> loadData(const std::string filename){
          }
         infile.close(); // Close the file.
     }
+    return y;
 }
