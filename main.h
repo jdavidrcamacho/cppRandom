@@ -9,8 +9,8 @@
 
 using namespace std;
 
-std::string dataset;
+std::vector<float> vec;
 
-int n;
+float a;
 
 #endif

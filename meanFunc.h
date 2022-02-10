@@ -1,12 +1,14 @@
 // meanFunc.h file
 #include <vector>
 
-#ifndef functions_H
-#define functions_H
+#ifndef meanFunc_H
+#define meanFunc_H
 
 float mean(std::vector<float> data);
 
-float answer;
+int n;
 
+float m;
+float answer;
 
 #endif

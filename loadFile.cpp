@@ -1,13 +1,7 @@
 // loadFile.cpp file
 #include <fstream>
 #include <iostream>
-#include <iomanip>
-#include <sstream>
-#include <numeric>
-#include <algorithm>
 #include <vector>
-#include <string>
-#include <set>
 
 #include "loadFile.h"
 
