@@ -11,7 +11,7 @@ using namespace std;
 ifstream infile;
 
 //std::vector<float> loadData(const std::string filename){
-std::tuple<std::vector<float>, std::vector<float>> loadData(const std::string filename){
+std::tuple<std::vector<float>, std::vector<float> , std::vector<float>> loadData(const std::string filename){
     infile.open(filename);
     if (infile.fail()){
         cout << "Error reading file!";
@@ -26,5 +26,5 @@ std::tuple<std::vector<float>, std::vector<float>> loadData(const std::string fi
          }
         infile.close(); // Close the file.
     }
-    return {t, y};
+    return {t, y, yerr};
 }

@@ -11,7 +11,7 @@
 using namespace std;
 
 //std::vector<float> loadData(const std::string filename);
-std::tuple<std::vector<float>, std::vector<float>> loadData(const std::string filename);
+std::tuple<std::vector<float>, std::vector<float> , std::vector<float>> loadData(const std::string filename);
 
 std::vector<float> t, y, yerr;
 std::vector<float> result;
