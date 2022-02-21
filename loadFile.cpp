@@ -1,6 +1,7 @@
 // loadFile.cpp file
 #include <fstream>
 #include <iostream>
+#include <tuple>
 #include <vector>
 
 #include "loadFile.h"
@@ -9,7 +10,8 @@ using namespace std;
 
 ifstream infile;
 
-std::vector<float> loadData(const std::string filename){
+//std::vector<float> loadData(const std::string filename){
+std::tuple<std::vector<float>, std::vector<float>> loadData(const std::string filename){
     infile.open(filename);
     if (infile.fail()){
         cout << "Error reading file!";
@@ -24,5 +26,5 @@ std::vector<float> loadData(const std::string filename){
          }
         infile.close(); // Close the file.
     }
-    return y;
+    return {t, y};
 }

@@ -1,6 +1,7 @@
 // main.cpp file
 #include <iostream>
 #include <fstream>
+#include <tuple>
 #include <vector>
 #include <cmath>
 
@@ -13,17 +14,19 @@ using namespace std;
 int main(){
     cout << "Welcome" << endl;
     string dataset = "data.txt";
-    y = loadData(dataset);
+    auto [t, y] = loadData(dataset);
+        // Display the time;
+        cout << "The time: ";
+        for (int n = 0; n < t.size(); n++){
+            cout << t[n] << " ";
+        }
+        cout << endl;
         // Display the data:
         cout << "The data: ";
         for (int n = 0; n < y.size(); n++){
             cout << y[n] << " ";
         }
         cout << endl;
-    /*
-    vec = {16.0, 2.0, 77.0, 40.0};
-    vec.push_back(1.0);
-    */
     a = mean(y);
     cout << "Mean: " << a << endl;
 
